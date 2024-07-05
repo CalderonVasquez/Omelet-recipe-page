@@ -1,6 +1,8 @@
 /* reset css */
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 * {
   margin: 0;
@@ -8,6 +10,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -19,8 +22,21 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+ul, ol {
+  padding: 0 1rem;
+}
 #root, #__next {
   isolation: isolate;
+} 
+
+/* fonts */
+@font-face {
+  font-family: "Young Serif";
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
 /* css variables */
@@ -43,4 +59,46 @@ p, h1, h2, h3, h4, h5, h6 {
   --font-weight-regular: 400;
   --font-weight-bold: 600;
   --font-weight-heavy: 700;
+}
+body {
+  font-size: 1rem;
+  font-family: var(--font-family-outfit);
+  color: var(--neutral-wenge-brown);
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-family-young-serif);
+  letter-spacing: .05rem;
+  margin-bottom: 1.5rem;
+}
+h2, h3, h4 {
+  color: var(--primary-nutmeg);
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+li::marker {
+  color: var(--primary-nutmeg);
+}
+strong {
+  color: var(--neutral-wenge-brown);
+  font-weight: bold;
+}
+.wrapper {
+  display: grid;
+  place-items: center;
+  background-color: var(--neutral-eggshell);
+}
+.recipe-wrapper {
+  max-width: 46rem;
+  border-radius: .75rem;
+  margin: 7.6rem 0;
+  padding: 2.5rem;
+  background-color: var(--neutral-white);
+}
+.recipe-image {
+  margin-bottom: 2.5rem;
+  border-radius: .75rem;
+}
+.recipe-title {
+  font-size: 2.75rem;
+  color: var(--neutral-dark-charcoal);
 }
