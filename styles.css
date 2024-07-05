@@ -1,0 +1,46 @@
+/* reset css */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+/* css variables */
+:root {
+    /* Colors */
+  --primary-nutmeg: hsl(14, 45%, 36%);
+  --primary-dark-raspberry: hsl(332, 51%, 32%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-rose-white: hsl(330, 100%, 98%);
+  --neutral-eggshell: hsl(30, 54%, 90%);
+  --neutral-light-grey: hsl(30, 18%, 87%);
+  --neutral-wenge-brown: hsl(30, 10%, 34%);
+  --neutral-dark-charcoal: hsl(24, 5%, 18%);
+
+  /* Font Family */
+  --font-family-young-serif: "Young Serif", serif;
+  --font-family-outfit: "Outfit", sans-serif;
+
+  /* Font weight */
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+  --font-weight-heavy: 700;
+}
