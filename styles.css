@@ -63,6 +63,8 @@ ul, ol {
 body {
   font-size: 1rem;
   font-family: var(--font-family-outfit);
+  font-weight: var(--font-weight-regular);
+  letter-spacing:normal;
   color: var(--neutral-wenge-brown);
 }
 h1, h2, h3, h4 {
@@ -75,12 +77,19 @@ h2, h3, h4 {
   font-size: 1.75rem;
   font-weight: 400;
 }
+li {
+  padding-left: 1rem;
+}
 li::marker {
   color: var(--primary-nutmeg);
 }
 strong {
   color: var(--neutral-wenge-brown);
   font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 .wrapper {
   display: grid;
@@ -101,4 +110,79 @@ strong {
 .recipe-title {
   font-size: 2.75rem;
   color: var(--neutral-dark-charcoal);
+}
+.recipe-prep-time{
+  padding: 1.75rem;
+  margin: 2rem 0;
+  background-color: var(--neutral-rose-white);
+}
+.prep-time-tile {
+  font-size: 1.50rem;
+  color: var(--primary-dark-raspberry);
+  margin-bottom: 1rem;
+  font-weight: var(--font-weight-bold);
+}
+.recipe-instructions {
+  border-top: 1px solid var(--neutral-light-grey);
+  border-bottom: 1px solid var(--neutral-light-grey);
+  margin: 2rem 0;
+}
+.recipe-instructions-title {
+  margin-top: 2rem;
+}
+.recipe-instructions-list li:not(:last-child){
+  margin-bottom: 0.5rem;
+}
+.recipe-instructions-list li:last-child {
+  margin-bottom: 2rem;
+}
+.recipe-nutrition-table {
+  margin-top: 1.5rem;
+}
+.recipe-nutrition-table tr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0.75rem;
+}
+.recipe-nutrition-table tr:not(:last-child) {
+  border-bottom: 1px solid var(--neutral-light-grey);
+}
+[data-cell="nutrient-amount"] {
+  color: var(--primary-nutmeg);
+  font-weight: var(--font-weight-heavy);
+}
+footer {
+  background-color: var(--neutral-eggshell);
+}
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+/* media query */
+@media (max-width: 500px) {
+    .recipe-wrapper {
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .recipe-img {
+        border-radius: 0;
+    }
+
+    .recipe-container {
+        padding: 0 1.75rem;
+    }
+
+    .recipe-title {
+        font-size: 2.2rem;
+    }
+    footer {
+      margin-top: 1.5rem;
+     background-color: var(--neutral-white);
+    }
 }
