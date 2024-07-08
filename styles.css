@@ -121,11 +121,17 @@ table {
   border-radius: .75rem;
   background-color: var(--neutral-rose-white);
 }
-.prep-time-tile {
+.prep-time-title {
   font-size: 1.50rem;
   color: var(--primary-dark-raspberry);
   margin-bottom: 1rem;
   font-weight: var(--font-weight-bold);
+}
+.recipe-ingredients {
+  margin-bottom: 2rem;
+}
+.recipe-ingredients-title {
+  margin-bottom: 1.5rem;
 }
 .recipe-instructions {
   border-top: 1px solid var(--neutral-light-grey);
