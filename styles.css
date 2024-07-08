@@ -8,7 +8,7 @@
   margin: 0;
 }
 body {
-  line-height: 1.5;
+  /* line-height: 1.5; */
   -webkit-font-smoothing: antialiased;
   font-size: 1rem;
 }
@@ -118,14 +118,17 @@ table {
 .recipe-prep-time{
   padding: 1.75rem;
   margin: 2rem 0;
-  border-radius: .75rem;
+  border-radius: 1rem;
   background-color: var(--neutral-rose-white);
 }
 .prep-time-title {
   font-size: 1.50rem;
   color: var(--primary-dark-raspberry);
   margin-bottom: 1rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-heavy);
+}
+.prep-time-list li:not(:last-child) {
+  margin-bottom: .50rem;
 }
 .recipe-ingredients {
   margin-bottom: 2rem;
