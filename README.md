@@ -21,11 +21,9 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ![Desktop](assets/images/update-recipe-page.png)
 
-[Mobile](assets/images/mobile.png)
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL here](https://your-solution-url.com)
 - Live Site URL: [live site URL here](https://omelete-recipe-page.netlify.app/)
 
 ## My process

@@ -122,7 +122,7 @@ table {
   background-color: var(--neutral-rose-white);
 }
 .prep-time-title {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   color: var(--primary-dark-raspberry);
   margin-bottom: 1rem;
   font-weight: var(--font-weight-heavy);
